@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import logo from "../assets/img/logo.svg";
+import logo from "../assets/img/undefined18060-white.svg";
 import navIcon1 from "../assets/img/nav-icon1.svg";
 import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 
 export const NavBar = () => {
-  const [activeLink, setAtiveLink] = useState("home");
+  const [activeLink, setActiveLink] = useState("home");
   const [scrolled, seScrolled] = useState(false);
 
   useEffect(() => {
@@ -43,7 +43,7 @@ export const NavBar = () => {
               className={
                 activeLink === "home" ? "active navbar-link" : "navbar-link"
               }
-              onClick={() => onUpdateAciveLink("home")}
+              onClick={() => onUpdateActiveLink("home")}
             >
               Home
             </Nav.Link>
