@@ -166,7 +166,7 @@ span.navbar-text {
   font-weight: 700;
   color: #fff;
   border: 1px solid #fff;
-  padding: 18px 34px;
+  padding: 10px 34px;
   font-size: 18px;
   margin-left: 18px;
   position: relative;
@@ -317,58 +317,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
-/************ Skills Css ************/
-.skill {
-  padding: 0 0 50px 0;
-  position: relative;
-}
-.skill-bx {
-  background: #151515;
-  border-radius: 64px;
-  text-align: center;
-  padding: 60px 50px;
-  margin-top: -60px;
-}
-.skill h2 {
-  font-size: 45px;
-  font-weight: 700;
-}
-.skill p {
-  color: #b8b8b8;
-  font-size: 18px;
-  letter-spacing: 0.8px;
-  line-height: 1.5em;
-  margin: 14px 0 75px 0;
-}
-.skill-slider {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-}
-.skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
-}
-.background-image-left {
-  top: 28%;
-  position: absolute;
-  bottom: 0;
-  width: 40%;
-  z-index: -4;
-}
-
-/************ Projects Css ************/
-.project {
+/************ Products Css ************/
+.products {
   padding: 80px 0;
   position: relative;
   background-color: black;
 }
-.project h2 {
+.products h2 {
   font-size: 45px;
   font-weight: 700;
   text-align: center;
 }
-.project p {
+.products p {
   color: #b8b8b8;
   font-size: 18px;
   letter-spacing: 0.8px;
@@ -377,17 +337,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   width: 56%;
 }
-.project .nav.nav-pills {
+.products .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
-.project .nav.nav-pills .nav-item {
+.products .nav.nav-pills .nav-item {
   width: 33.33333%;
 }
-.project .nav.nav-pills .nav-link {
+.products .nav.nav-pills .nav-link {
   background-color: transparent;
   border-radius: 0;
   padding: 17px 0;
@@ -401,54 +361,45 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   z-index: 0;
 }
-.project .nav.nav-pills .nav-link::before {
+.products .nav.nav-pills .nav-link::before {
   content: "";
   position: absolute;
   width: 0;
   height: 100%;
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #6a8cc6 6%, #33a47a 110%);
   top: 0;
   left: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
-.project .nav.nav-pills .nav-link.active::before {
+.products .nav.nav-pills .nav-link.active::before {
   width: 100% !important;
 }
-.project .nav.nav-pills .nav-link.active {
-  border: 1px solid rgba(255, 255, 255, 1);
-}
-.nav-link#projects-tabs-tab-first {
-  border: 1px solid rgba(255, 255, 255, 0.5);
+.nav-link#products-tabs-tab-first {
   border-radius: 55px 0px 0px 55px;
 }
-.nav-link#projects-tabs-tab-second {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-.nav-link#projects-tabs-tab-third {
-  border: 1px solid rgba(255, 255, 255, 0.5);
+.nav-link#products-tabs-tab-third {
   border-radius: 0 55px 55px 0;
 }
-.proj-imgbx {
+.prod-imgbx {
   position: relative;
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
 }
-.proj-imgbx::before {
+.prod-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #2d6866 -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #2d6866 -6%, #6a8cc6 110%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
   height: 0;
   transition: 0.4s ease-in-out;
 }
-.proj-imgbx:hover::before {
+.prod-imgbx:hover::before {
   height: 100%;
 }
-.proj-txtx {
+.prod-txt {
   position: absolute;
   text-align: center;
   top: 65%;
@@ -458,17 +409,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   opacity: 0;
   width: 100%;
 }
-.proj-imgbx:hover .proj-txtx {
+.prod-imgbx:hover .prod-txt {
   top: 50%;
   opacity: 1;
 }
-.proj-txtx h4 {
+.prod-txt h4 {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
 }
-.proj-txtx span {
+.prod-txt span {
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
@@ -483,9 +434,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/************ Contact Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #2d6866 -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #2d6866 -6%, #4a2fbd 110%);
   padding: 60px 0 200px 0;
 }
 .contact img {
@@ -591,7 +542,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .new-email-bx::before {
   content: "";
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #aa367c -6%, #4a2fbd 110%);
   border-radius: 20px;
   position: absolute;
   z-index: -1;
@@ -620,7 +571,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 0 15px;
 }
 .new-email-bx button {
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #aa367c -6%, #4a2fbd 110%);
   padding: 20px 65px;
   color: #fff;
   font-weight: 500;
